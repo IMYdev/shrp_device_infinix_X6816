@@ -165,7 +165,7 @@ TW_NO_SCREEN_BLANK := true
 TW_SCREEN_BLANK_ON_BOOT := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
-TW_EXCLUDE_MTP := true
+TW_HAS_MTP := true
 TW_FRAMERATE := 60
 
 # Debug
@@ -180,7 +180,7 @@ SHRP_PATH := device/infinix/$(SHRP_DEVICE_CODE)
 
 SHRP_MAINTAINER := IMY
 
-SHRP_REC_TYPE := Normal
+SHRP_REC_TYPE := SAR
 
 SHRP_DEVICE_TYPE := A/B
 
@@ -189,6 +189,13 @@ SHRP_AB := true
 SHRP_EXTERNAL := /external_sd
 
 SHRP_OTG := /usb_otg
+
+#Flashlight configuration
+
+SHRP_FLASH := 1
+SHRP_CUSTOM_FLASHLIGHT := true
+SHRP_FONP_1 := /sys/devices/virtual/torch/torch/torch_level
+SHRP_FLASH_MAX_BRIGHTNESS := 1
 
 #Remove additional features as they are broken
 #and we don't have enough space in our boot partition
@@ -202,3 +209,10 @@ SHRP_SKIP_DEFAULT_ADDON_3 := true
 SHRP_SKIP_DEFAULT_ADDON_4 := true
 
 SHRP_EXCLUDE_MAGISK_FLASH := true
+
+#Theming is broken anyways so remove it
+#and that we have little space on our boot partition
+SHRP_LITE := true
+
+#Move the battery icon to be full visible
+SHRP_STATUSBAR_RIGHT_PADDING := 30
