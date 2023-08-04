@@ -5,7 +5,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/infinix/X6816
+DEVICE_PATH := device/infinix/lion
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
@@ -33,7 +33,7 @@ ENABLE_CPUSETS := true
 ENABLE_SCHEDBOOST := true
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := X6816,FULL-64
+TARGET_OTA_ASSERT_DEVICE := lion
 
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := CY-X6816-XQ683-A
@@ -174,7 +174,7 @@ TARGET_USES_LOGD := true
 
 # SHRP specific build flags
 
-SHRP_DEVICE_CODE := X6816
+SHRP_DEVICE_CODE := lion
 
 SHRP_PATH := device/infinix/$(SHRP_DEVICE_CODE)
 
