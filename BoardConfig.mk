@@ -148,7 +148,7 @@ BOARD_USES_MTK_HARDWARE := true
 
 ## TWRP-Specific configuration
 TW_THEME := portrait_hdpi
-TW_DEVICE_VERSION := INFINIX-HOT-12-PLAY
+TW_DEVICE_VERSION := Lion
 RECOVERY_SDCARD_ON_DATA := true
 TARGET_USES_MKE2FS := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
@@ -166,7 +166,7 @@ TW_SCREEN_BLANK_ON_BOOT := true
 TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_REPACKTOOLS := true
 TW_HAS_MTP := true
-TW_FRAMERATE := 60
+TW_FRAMERATE := 90
 
 # Debug
 TWRP_INCLUDE_LOGCAT := true
